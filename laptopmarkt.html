@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TekMarkt - Marketplace Laptop Bekas</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>TekMarkt</h1>
+        <nav>
+            <a href="laptopmarkt.html">Beranda</a>
+            <a href="katalog.html">Katalog</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <div class="slide fade"><img src="gambar/slide1.jpg" alt="Laptop 1"></div>
+            <div class="slide fade"><img src="gambar/slide2.jpg" alt="Laptop 2"></div>
+            <div class="slide fade"><img src="gambar/slide3.jpg" alt="Laptop 3"></div>
+            <div class="slide fade"><img src="gambar/slide4.jpg" alt="Laptop 4"></div>
+            <div class="slide fade"><img src="gambar/slide5.jpg" alt="Laptop 5"></div>
+            <div class="slide fade"><img src="gambar/slide6.jpg" alt="Laptop 6"></div>
+        </div>
+
+        <!-- Search Bar -->
+        <section id="search-bar">
+            <input type="text" id="searchBox" placeholder="Cari laptop...">
+            <select>
+                <option value="">Keperluan apa?</option>
+                <option value="gaming">Gaming</option>
+                <option value="work">Work</option>
+                <option value="pelajar">Pelajar</option>
+            </select>
+            <button onclick="searchProduct()">Cari</button>
+        </section>
+
+        <!-- Review Pelanggan -->
+        <section id="reviews">
+            <div class="review">
+                <p>"Produk asli – Laptop yang saya terima benar-benar original sesuai deskripsi."</p>
+                <strong>- David GadgetIN, Reviewer</strong>
+            </div>
+            <div class="review">
+                <p>"Kualitas bagus – Performa laptop sangat memuaskan, cepat dan sesuai harapan."</p>
+                <strong>- Windah Basudara, Streamer</strong>
+            </div>
+            <div class="review">
+                <p>"Toko terpercaya – Pengiriman cepat, aman, dan pelayanan dari toko sangat baik. The best lah, TekMarkt!"</p>
+                <strong>- Jason, Mahasiswa</strong>
+            </div>
+        </section>
+
+        <!-- Tentang TekMarkt -->
+        <section id="about-tekmarkt">
+            <h2>TekMarkt: Pusat Laptop Bekas Online!</h2>
+            <p>Temukan berbagai pilihan laptop bekas berkualitas dengan harga terbaik hanya di TekMarkt.</p>
+        </section>
+    </main>
+</body>
+</html>
