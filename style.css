@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Sprintura';
+  src: url('fonts/Sprintura Demo.otf') format('opentype');
+}
+
 body {
     font-family: Helvetica, sans-serif;
     background: linear-gradient(to bottom, #FFA500, #FFFFFF);
@@ -23,6 +28,10 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+}
+
+h1 {
+  font-family: 'Sprintura', sans-serif;
 }
 
 #slideshow {
