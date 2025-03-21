@@ -12,7 +12,8 @@ function showSlides() {
 
 function searchProduct() {
     let query = document.getElementById("searchBox").value.toLowerCase();
-    window.location.href = "katalog.html?search=" + encodeURIComponent(query);
+    let category = document.querySelector("#search-bar select").value;
+    window.location.href = `katalog.html?search=${encodeURIComponent(query)}&category=${encodeURIComponent(category)}`;
 }
 
 document.addEventListener("DOMContentLoaded", showSlides);
