@@ -16,4 +16,14 @@ function searchProduct() {
     window.location.href = `katalog.html?search=${encodeURIComponent(query)}&category=${encodeURIComponent(category)}`;
 }
 
+function submitForm(event) {
+    event.preventDefault();
+
+    let message = document.getElementById("pesan-terkirim");
+    message.innerText = "Terima kasih atas pesannya! Silakan menunggu kabar selanjutnya paling cepat 1 jam setelah pesan dikirim.";
+    message.style.display = "block";
+
+    document.querySelector(".form-kontak").reset();
+}
+
 document.addEventListener("DOMContentLoaded", showSlides);
