@@ -7,6 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let params = new URLSearchParams(window.location.search);
+    let searchQuery = params.get("search");
+    let category = params.get("category");
+
+    if (searchQuery || category) {
+        let products = document.querySelectorAll(".produk-item");
+
+        products.forEach(product => {
+            let productName = product.querySelector("p").textContent.toLowerCase();
+            let productCategory = product.closest(".produk-container").previousElementSibling.textContent.toLowerCase();
+
+            let matchesSearch = searchQuery ? productName.includes(searchQuery) : true;
+            let matchesCategory = category ? productCategory.includes(category) : true;
+
+            if (matchesSearch && matchesCategory) {
+                product.style.display = "block"; // Tampilkan produk yang sesuai
+            } else {
+                product.style.display = "none"; // Sembunyikan produk yang tidak sesuai
+            }
+        });
+    }
+});
+</script>
+
     <header>
         <h1>Katalog TekMarkt</h1>
         <nav>
