@@ -22,7 +22,7 @@
 
     <section class="kontak">
         <h2>Kirim Pesan</h2>
-        <form action="#" method="post" class="form-kontak">
+        <form action="#" method="post" class="form-kontak" onsubmit="submitForm(event)">
             <label for="nama">Nama:</label>
             <input type="text" id="nama" name="nama" required>
 
@@ -34,6 +34,8 @@
 
             <button type="submit">Kirim Pesan</button>
         </form>
+
+        <p id="pesan-terkirim" style="display: none; color: green; font-weight: bold; margin-top: 10px;"></p>
 
         <h2>Informasi Kontak</h2>
         <p>Email: <a href="mailto:tekmarkt@gmail.com">tekmarkt@gmail.com</a></p>
