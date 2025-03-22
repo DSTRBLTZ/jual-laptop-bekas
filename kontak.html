@@ -22,7 +22,7 @@
 
     <section class="kontak">
         <h2>Kirim Pesan</h2>
-        <form action="#" method="post" class="form-kontak" onsubmit="submitForm(event)">
+            <form class="form-kontak" onsubmit="submitForm(event)">
             <label for="nama">Nama:</label>
             <input type="text" id="nama" name="nama" required>
 
@@ -33,9 +33,12 @@
             <textarea id="pesan" name="pesan" rows="4" required></textarea>
 
             <button type="submit">Kirim Pesan</button>
-        </form>
+    </form>
 
-        <p id="pesan-terkirim" style="display: none; color: green; font-weight: bold; margin-top: 10px;"></p>
+        <p id="pesan-terkirim" style="display: none; color: green; font-weight: bold; text-align: center; margin-top: 15px;">
+        ✅ Terima kasih atas pesannya! Silakan menunggu kabar selanjutnya paling cepat 1 jam setelah pesan dikirim.
+        </p>
+    </section>
 
         <h2>Informasi Kontak</h2>
         <p>Email: <a href="mailto:tekmarkt@gmail.com">tekmarkt@gmail.com</a></p>
@@ -46,5 +49,7 @@
     <footer>
         <p>&copy; 2025 TekMarkt. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
