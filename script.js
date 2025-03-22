@@ -20,10 +20,14 @@ function submitForm(event) {
     event.preventDefault();
 
     let message = document.getElementById("pesan-terkirim");
-    message.innerText = "Terima kasih atas pesannya! Silakan menunggu kabar selanjutnya paling cepat 1 jam setelah pesan dikirim.";
-    message.style.display = "block";
+    if (message) {
+        message.style.display = "block";
+    }
 
-    document.querySelector(".form-kontak").reset();
+    let form = document.querySelector(".form-kontak");
+    if (form) {
+        form.style.display = "none";
+    }
 }
 
 document.addEventListener("DOMContentLoaded", showSlides);
